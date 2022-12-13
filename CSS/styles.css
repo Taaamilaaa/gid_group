@@ -181,12 +181,74 @@ body {
     text-align: center;
     margin-bottom: 26px;
 }
+.hero-list__item a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
 .hero-list__item:last-child {
     margin-bottom: 0px;
 }
 .hero-arrow {
     text-align: center;
     padding: 39px 0 43px 0;
+}
+
+/* hero-form */
+.hero-form__container {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 73px 19px 100px 19px;
+}
+.hero-form__containerOpen {
+    display: block;
+}
+.hero-form__container h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 73px;
+}
+.hero-form__container input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border: 2px solid #000000;
+    color: #4f4f4f;
+    width: 338px;
+    height: 57px;
+}
+.hero-form__container input:first-of-type {
+    margin-bottom: 14px;
+}
+.hero-form__container input:last-of-type {
+    margin-bottom: 26px;
+}
+.hero-form__container input::placeholder {
+    padding-left: 52px;
+}
+
+.form-btn {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    color: #000000;
+    height: 81px;
+    background-color: var(--accent-color);
+}
+.hero-form__btn {
+    position: absolute;
+    top: 29px;
+    right: 23px;
+    width: 30px;
+    height: 30px;
 }
 
 /* benefits */
@@ -602,11 +664,63 @@ footer {
     left: 223px;
     top: -5px;
 }
-.footer-contant__container p{
+.footer-contant__container p {
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
     color: #bdbdbd;
     padding-bottom: 22px;
     padding-left: 9px;
+}
+
+/* modal */
+.modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding-top: 74px;
+    text-align: center;
+}
+.modalOpen {
+    display: block;
+    position: fixed;
+}
+.modal-logo {
+    width: 131px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 127px;
+}
+.modal-nav__list a {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #828282;
+}
+.modal-nav__list li:not(:last-of-type) {
+    margin-bottom: 39px;
+}
+.modal nav {
+    margin-bottom: 71px;
+}
+.modal-list {
+    display: grid;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 27fr 27fr 27fr;
+    grid-template-rows: 40px;
+    grid-template-areas: 16px;
+}
+.modal button {
+    position: absolute;
+    top: 60px;
+    left: 40px;
 }

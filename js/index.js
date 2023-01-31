@@ -1,2 +1,3 @@
-import { onModalOpenBtnClick, onModalCloseBtnClick } from "./modalMenu.js";
-import {onPhoneBtnClick, onHeroFormCloseBtnClick} from "./phoneForm.js"
+import "./modalMenu.js";
+import "./phoneForm.js";
+import "./upBtn.js";

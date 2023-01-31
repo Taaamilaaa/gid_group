@@ -116,7 +116,7 @@ body {
 .modalOpenBtn:hover .modalOpenBtn-icon,
 .modalOpenBtn:focus .modalOpenBtn-icon,
 .phoneBtn:focus .phoneBtn-icon,
-.phoneBtn:hover .phoneBtn-icon{
+.phoneBtn:hover .phoneBtn-icon {
     transform: scale(1.2);
 }
 
@@ -148,20 +148,33 @@ body {
     margin-bottom: 1.857rem;
 }
 
-.hero-list__item a {
+
+.hero-list__button {
     font-size: 1.285rem;
     line-height: 1.5rem;
     color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-list__item:last-child {
     margin-bottom: 0px;
 }
-
+.hero-link__next{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: fit-content;
+}
 .hero-arrow {
     text-align: center;
     padding: 2rem 0;
 }
+
 
 /* hero-form */
 .hero-form__container {
@@ -171,15 +184,16 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-   
+
 
 }
-.hero-form{
+
+.hero-form {
     position: absolute;
     width: 100%;
     top: 302px;
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 73px 0 100px; 
+    padding: 73px 0 100px;
     text-align: center;
 }
 
@@ -238,17 +252,20 @@ body {
     height: 50px;
     display: flex;
     justify-content: center;
-align-items: center;
+    align-items: center;
     background-color: transparent;
 }
-.form-btn__icon{
+
+.form-btn__icon {
     width: 38px;
     height: 38px;
 }
+
 .hero-form .hero-form__btn:hover svg.form-btn__icon,
-.hero-form .hero-form__btn:focus svg.form-btn__icon{
+.hero-form .hero-form__btn:focus svg.form-btn__icon {
     transform: scale(1.2);
 }
+
 /* benefits */
 
 .benefits-container {
@@ -589,8 +606,9 @@ section h2::after {
 .stages-list__item {
     margin-bottom: 2.428rem;
 }
+
 .stages-list__item-number,
-.stages-list__item-text{
+.stages-list__item-text {
     display: none;
 }
 
@@ -605,27 +623,32 @@ section h2::after {
     height: 61px;
     border: solid 1px #000000;
 }
- svg.stages-icon.stages-icon__envelope{
+
+svg.stages-icon.stages-icon__envelope {
     width: 61px;
     height: 56px;
 }
-svg.stages-icon.stages-icon__rulle{
+
+svg.stages-icon.stages-icon__rulle {
     width: 58px;
     height: 56px;
 }
 
-svg.stages-icon.stages-icon__calculate{
+svg.stages-icon.stages-icon__calculate {
     width: 42px;
     height: 56px;
 }
+
 svg.stages-icon.stages-icon__list {
     width: 53px;
     height: 54px;
 }
+
 svg.stages-icon.stages-icon__brush {
     width: 40px;
     height: 53px;
 }
+
 svg.stages-icon.stages-icon__home {
     width: 58px;
     height: 58px;
@@ -759,15 +782,17 @@ footer p {
     line-height: 146.19%;
     color: #bdbdbd;
 }
-.footer-social__list-wrapper .footer-icon{
+
+.footer-social__list-wrapper .footer-icon {
     display: block;
     width: 18px;
     height: 18px;
 }
 
-.footer-social__list-wrapper .footer-icon path{
+.footer-social__list-wrapper .footer-icon path {
     fill: #000;
 }
+
 /* modal */
 .modal-container {
     display: none;
@@ -779,6 +804,7 @@ footer p {
     overflow: hidden;
     z-index: 999;
 }
+
 .modal {
     width: 100%;
     height: 100%;
@@ -800,15 +826,16 @@ footer p {
     height: 50px;
 }
 
-.modalCloseBtn svg.modal-close__icon{
+.modalCloseBtn svg.modal-close__icon {
     width: 36px;
     height: 36px;
 }
 
 .modalCloseBtn:hover svg.modal-close__icon,
-.modalCloseBtn:focus svg.modal-close__icon{
+.modalCloseBtn:focus svg.modal-close__icon {
     transform: scale(1.2);
 }
+
 .modalOpen {
     display: block;
     position: fixed;
@@ -824,7 +851,7 @@ footer p {
 
 .modal-nav__list {
     text-align: center;
-    }
+}
 
 .modal-nav__list a {
     font-weight: 300;
@@ -840,16 +867,19 @@ footer p {
 .modal nav {
     margin-bottom: 71px;
 }
+
 .modal-social__list-container {
     width: 165px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .modal-social__list {
     display: flex;
     flex-wrap: wrap;
     margin: -20px;
 }
+
 .modal-social__list li {
     margin: 20px;
 }
@@ -868,16 +898,19 @@ footer p {
     text-decoration: underline;
 }
 
-.modal-social__list svg.modal-icon{
+.modal-social__list svg.modal-icon {
     width: 26px;
-    height: 26px;   
+    height: 26px;
 }
+
 .modal-container .modal-social__list-container .modal-social__list a:hover svg.modal-icon,
-.modal-container .modal-social__list-container .modal-social__list a:focus svg.modal-icon{
+.modal-container .modal-social__list-container .modal-social__list a:focus svg.modal-icon {
     transform: scale(1.2);
 }
 
-
+.up-btn{
+    display: none;
+}
 @media only screen and (max-width: 375px) {
     footer {
         padding-bottom: 0;
@@ -897,9 +930,7 @@ footer p {
         display: none;
     }
 
-    .up-btn {
-        display: none;
-    }
+  
 
     .price-bonus__btn-tablet {
         display: none;
@@ -907,6 +938,21 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
+    .up-btn {
+        display: block;
+            opacity: 0;
+            position: fixed;
+            bottom: 329px;
+            right: 0;
+            z-index: 120;
+            width: 94px;
+            height: 30px;
+            background-color: inherit;
+            border: 1px solid #000;
+            color: #000;
+            transform: rotate(270deg);
+            background-color: rgba(255, 255, 255, 0.486);
+        }
     .footer-contacts__container-mobile {
         display: none;
     }
@@ -978,24 +1024,29 @@ footer p {
         text-align: center;
         padding: 62px 0;
     }
-    .hero-form{
+
+    .hero-form {
         width: min(769px, 90%);
         left: 50%;
         transform: translateX(-50%);
         padding: 77px 0 96px;
 
     }
-    .hero-form h4{
+
+    .hero-form h4 {
         margin-bottom: 23px;
     }
-    .hero-form input{
+
+    .hero-form input {
         width: 440px;
     }
-    .form-btn{
+
+    .form-btn {
         width: 440px;
 
     }
-    .hero-form__btn{
+
+    .hero-form__btn {
         right: 47px;
     }
 
@@ -1299,7 +1350,7 @@ footer p {
         line-height: 28px;
     }
 
-    .stages-list__item-title ~ p {
+    .stages-list__item-title~p {
         font-weight: 400;
         font-size: 1.258rem;
         line-height: 147.69%;
@@ -1491,19 +1542,7 @@ footer p {
         height: 100%;
     }
 
-    .up-btn {
-        display: none;
-        position: fixed;
-        bottom: 329px;
-        left: 748px;
-        z-index: 020;
-        width: 94px;
-        height: 30px;
-        background-color: inherit;
-        border: 1px solid #000;
-        color: #000;
-        transform: rotate(270deg);
-    }
+ 
 
     /* modal */
     .modal {
@@ -1518,41 +1557,51 @@ footer p {
     .modal-logo {
         margin-bottom: 96px;
     }
+
     .modal-nav__list li {
         padding: 20px 77px;
     }
+
     .modal-nav__list li:not(:last-of-type) {
         margin-bottom: 0;
     }
+
     .modal-nav__list a {
         font-weight: 400;
         font-size: 48px;
         line-height: 56px;
     }
+
     .modal-nav__list {
         margin-bottom: 126px;
     }
+
     .modal-social__list-container {
         width: 600px;
     }
+
     .modal-social__list {
         flex-direction: row;
         justify-content: space-between;
     }
 
-  
+
 
     .modal-nav__link:hover,
     .modal-nav__list:focus {
         text-decoration: none;
     }
 
-.modal-social__list svg.modal-icon {
+    .modal-social__list svg.modal-icon {
+        width: 41px;
+        height: 41px;
+    }
+
+.footer-social__list-wrapper .footer-icon {
+
     width: 41px;
     height: 41px;
 }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1560,7 +1609,15 @@ footer p {
         display: flex;
     }
 }
+@media only screen and (min-width: 1400px){
+  .up-btn{
+    width: 185px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 28px;
+}  
 
+}
 @media only screen and (min-width: 1919px) {
     .bg-container {
         height: 1080px;
@@ -1620,13 +1677,14 @@ footer p {
     .hero-arrow {
         display: none;
     }
-    .hero-form{
+
+    .hero-form {
         padding: 109px 0 136px;
     }
-    .hero-form h4{
+
+    .hero-form h4 {
         margin-bottom: 46px;
     }
-   
 
     /* benefits */
 
@@ -2120,16 +2178,13 @@ footer p {
     .footer-nav__container-tablet {
         justify-content: space-evenly;
     }
-        .footer-social__list-wrapper .footer-icon {
-            
-            width: 41px;
-            height: 41px;
-        }
+
 
     /*modal*/
     .modal {
         padding-top: 98px;
     }
+
     .modalCloseBtn {
         top: 37px;
         left: 106px;

@@ -54,11 +54,13 @@ a {
 
 *,
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 14px;
 }
 
-body {
+body {   
+    
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 1rem;

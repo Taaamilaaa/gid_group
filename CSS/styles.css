@@ -2308,13 +2308,6 @@ footer p {
         line-height: 28px;
     }
 
-    .question-1__list,
-    .question-2__list,
-    .question-3__list {
-        display: flex;
-        justify-content: space-around;
-    }
-
     .question-4__list {
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(3, 1fr);

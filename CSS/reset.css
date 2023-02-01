@@ -37,6 +37,7 @@ section {
 img {
     display: block;
     width: 100%;
+   
 }
 
 ul {
@@ -53,10 +54,12 @@ a {
 }
 
 *,
-html {
-    scroll-behavior: smooth;
+html {   
     box-sizing: border-box;
     font-size: 14px;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body {   

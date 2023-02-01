@@ -9,5 +9,14 @@ export const refs = {
     heroFormCloseBtn: document.querySelector(".hero-form__btn"),
     upBtn: document.querySelector(".up-btn"),
 
+    quizOpenBtn: document.querySelectorAll(".price-bonus__btn"),
+    quizCloseBtn: document.querySelector(".quiz-form__btn"),
+
+    quiz: document.querySelector(".quiz-container"),
+    quizStylesImg: document.querySelectorAll(".quiz-img__container"),
+    quizStylesInputs: document.querySelectorAll(".style"),
+    quizForm: document.querySelector('.quiz-form')
+
+
 };
 

@@ -44,8 +44,8 @@
                 </ul>
             </nav>
 
-            <div class="logo-container">               
-                    <img src="./images/logo.svg" alt="logo" />                         
+            <div class="logo-container">
+                <img src="./images/logo.svg" alt="logo" />
             </div>
         </header>
 
@@ -53,8 +53,7 @@
 
         <!-- main -->
         <main>
-
-        <!-- hero -->            
+            <!-- hero -->
             <section class="hero">
                 <div class="hero-form__container">
                     <div class="hero-form">
@@ -65,8 +64,8 @@
                         </button>
                         <h4>Зворотній дзвінок</h4>
                         <div>
-                            <input type="text" placeholder="Ваше ім'я" pattern="[a-z]{1,15}"/>
-                            <input type="number" placeholder="Номер телефону" pattern=""/>
+                            <input type="text" placeholder="Ваше ім'я" pattern="[a-z]{1,15}" />
+                            <input type="number" placeholder="Номер телефону" pattern="" />
                             <button class="form-btn" type="submit">Зателефонуйте мені</button>
                         </div>
                     </div>
@@ -84,20 +83,17 @@
                 </ul>
 
                 <div class="hero-arrow">
-                    <a href="#next" class="hero-link__next"> 
+                    <a href="#next" class="hero-link__next">
                         <svg width="8" height="43">
-                        <use href="./images/sprite.svg#arrow"></use>
-                    </svg>
-                </a>
-                   
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
                 </div>
             </section>
-        <!-- end hero -->
+            <!-- end hero -->
 
-
-        <!-- benefits -->
-            <section  class="benefits-container">
-               
+            <!-- benefits -->
+            <section class="benefits-container">
                 <ul id="next" class="benefits-list">
                     <li class="benefits-list__item">
                         <span>100+</span>
@@ -110,9 +106,7 @@
                         <span>10 років</span>
                         <div>
                             <h3>Бездоганна репутація</h3>
-                            <p>
-                                Наші спеціалісти постійно стажуються у лідерів будівельних робіт
-                            </p>
+                            <p>Наші спеціалісти постійно стажуються у лідерів будівельних робіт</p>
                         </div>
                     </li>
                     <li class="benefits-list__item">
@@ -120,7 +114,8 @@
                         <div>
                             <h3>Гарантії на всі роботи</h3>
                             <p>
-                                Ми уважно вивчаємо ринок оздоблювальних матеріалів та інноваційної техніки.
+                                Ми уважно вивчаємо ринок оздоблювальних матеріалів та інноваційної
+                                техніки.
                             </p>
                         </div>
                     </li>
@@ -133,17 +128,21 @@
                     </li>
                 </ul>
             </section>
-        <!-- end benefits -->
+            <!-- end benefits -->
 
-        <!-- price -->
-            <section  class="price" id="price">
+            <!-- price -->
+            <section class="price" id="price">
                 <div class="price-container">
-                    <h2>ВАРТІСТЬ ПРОеКТА</h2>                    
+                    <h2>ВАРТІСТЬ ПРОЕКТА</h2>
                     <div class="price-content">
                         <div class="price-content__right">
-                            <span>Дізнайтесь вартість дизайн-проекту, відповівши на 3 питання</span>
+                            <span
+                                >Дізнайтесь вартість дизайн-проекту, відповівши на декілька
+                                питання</span
+                            >
                             <p class="price-container__text">
-                                Пройдіть короткий тест, дізнайтесь ціну, отримайте консультацію щодо майбутнього проекту
+                                Пройдіть короткий тест, дізнайтесь ціну, отримайте консультацію щодо
+                                майбутнього проекту
                             </p>
                             <button class="price-bonus__btn price-bonus__btn-tablet">
                                 Дізнатись вартість
@@ -175,14 +174,294 @@
                         </div>
                     </div>
 
-                    <button class="price-bonus__btn">Дізнатись вартість</button>
+                    <button class="price-bonus__btn" href="quizBegin">Дізнатись вартість</button>
                 </div>
-            </section>
-        <!-- end price -->
+                <!-- quiz -->
+                <div class="quiz-container quiz-close">
+                    <button class="quiz-form__btn">
+                        <svg width="37" height="37" class="form-btn__icon">
+                            <use href="./images/sprite.svg#cros-phone"></use>
+                        </svg>
+                    </button>
 
-        <!-- services -->
+                    <div id="quizBegin" class="quiz-content">
+                        <form class="quiz-form" action="">
+                            <div class="quiz-content__list">
+                                <div>
+                                    <ul class="quiz-content-text__list">
+                                        <li class="quiz-content__list-item">
+                                            <h3>Питання 1:</h3>
+                                            <p>Яка саме послуга вас цікавить?</p>
+                                            <ul class="question-1__list">
+                                                <li class="question-1__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="service"
+                                                        value="build"
+                                                        id="build"
+                                                    />
+                                                    <label for="build">Будівництво</label>
+                                                </li>
+                                                <li class="question-1__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="service"
+                                                        value="repair"
+                                                        id="repair"
+                                                        checked
+                                                    />
+                                                    <label for="repair">Ремонт</label>
+                                                </li>
+                                                <li class="question-1__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="service"
+                                                        value="design"
+                                                        id="design"
+                                                    />
+                                                    <label for="design">3D-дизайн</label>
+                                                </li>
+                                                <li class="question-1__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="service"
+                                                        value="small"
+                                                        id="large"
+                                                    />
+                                                    <label for="large"
+                                                        >Ландшафтний дизайн та проектування</label
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="quiz-content__list-item">
+                                            <h3>Питання 2:</h3>
+                                            <p>Який тип приміщення вашого проекту?</p>
+                                            <ul class="question-2__list">
+                                                <li class="question-2__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="type"
+                                                        value="house"
+                                                        id="house"
+                                                    />
+                                                    <label for="house">Дім</label>
+                                                </li>
+                                                <li class="question-2__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="type"
+                                                        value="apartment"
+                                                        id="apartment"
+                                                    />
+                                                    <label for="apartment">Квартира</label>
+                                                </li>
+                                                <li class="question-2__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="type"
+                                                        value="yard"
+                                                        id="yard"
+                                                    />
+                                                    <label for="yard">Подвір'я</label>
+                                                </li>
+                                                <li class="question-2__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="type"
+                                                        value="room"
+                                                        id="room"
+                                                    />
+                                                    <label for="room">Кімната</label>
+                                                </li>
+                                                <li class="question-2__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="type"
+                                                        value="bathroom"
+                                                        id="bathroom"
+                                                    />
+                                                    <label for="bathroom">Санвузел</label>
+                                                </li>
+                                                <li class="question-2__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="type"
+                                                        value="kitchen"
+                                                        id="kitchen"
+                                                        checked
+                                                    />
+                                                    <label for="kitchen">Кухня</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="quiz-content__list-item">
+                                            <h3>Питання 3:</h3>
+                                            <p>Який розмір приміщення для вашого проекту?</p>
+                                            <ul class="question-3__list">
+                                                <li class="question-3__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="square"
+                                                        value="small"
+                                                        id="small"
+                                                        checked
+                                                    />
+                                                    <label for="small">до 80 м2</label>
+                                                </li>
+                                                <li class="question-3__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="square"
+                                                        value="small"
+                                                        id="medium"
+                                                    />
+                                                    <label for="medium">від 80 м2 до 120 м2</label>
+                                                </li>
+                                                <li class="question-3__list-item">
+                                                    <input
+                                                        class="custom-radio"
+                                                        type="radio"
+                                                        name="square"
+                                                        value="small"
+                                                        id="large"
+                                                    />
+                                                    <label for="large">від 120 м2</label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </li>
+
+                                <div class="quiz-content__list-item">
+                                    <h3>Питання 4:</h3>
+                                    <p>Який стиль найкраще підходить для вашого проекту?</p>
+                                    <ul class="question-4__list">
+                                        <li class="question-4__list-item">
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="style"
+                                                value="scandinavian"
+                                                id="scandinavian"
+                                            />
+                                            <div id="scandinavian" class="quiz-img__container">
+                                                <img
+                                                    src="./images/quiz/scandinavian.jpg"
+                                                    alt="Приклад інтер'єру в стилі  скандинавський"
+                                                />
+                                            </div>
+                                            <label for="scandinavian">Скандинавський</label>
+                                        </li>
+                                        <li class="question-4__list-item">
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="style"
+                                                value="func"
+                                                id="func"
+                                            />
+                                            <div id="func" class="quiz-img__container">
+                                                <img
+                                                    src="./images/quiz/func.jpg"
+                                                    alt="Приклад інтер'єру в стилі  функціанолізм"
+                                                />
+                                            </div>
+                                            <label for="func">Функціанолізм</label>
+                                        </li>
+                                        <li class="question-4__list-item">
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="style"
+                                                value="loft"
+                                                id="loft"
+                                            />
+                                            <div id="loft" class="quiz-img__container">
+                                                <img
+                                                    src="./images/quiz/loft.jpg"
+                                                    alt="Приклад інтер'єру в стилі лофт"
+                                                />
+                                            </div>
+                                            <label for="loft">Лофт</label>
+                                        </li>
+                                        <li class="question-4__list-item">
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="style"
+                                                value="minimalism"
+                                                id="minimalism"
+                                                checked
+                                            />
+                                            <div id="minimalism" class="quiz-img__container">
+                                                <img
+                                                    src="./images/quiz/minimalism.jpg"
+                                                    alt="Приклад інтер'єру в стилі мінімалізм"
+                                                />
+                                            </div>
+                                            <label for="minimalism">Мінімалізм</label>
+                                        </li>
+                                        <li class="question-4__list-item">
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="style"
+                                                value="high-tech"
+                                                id="high-tech"
+                                            />
+                                            <div id="high-tech" class="quiz-img__container">
+                                                <img
+                                                    src="./images/quiz/high-tech.jpg"
+                                                    alt="Приклад інтер'єру в стилі хай-тек"
+                                                />
+                                            </div>
+                                            <label for="high-tech">Хай-Тек</label>
+                                        </li>
+                                        <li class="question-4__list-item">
+                                            <input
+                                                class="custom-radio style"
+                                                type="radio"
+                                                name="style"
+                                                value="east"
+                                                id="east"
+                                            />
+                                            <div id="east" class="quiz-img__container">
+                                                <img
+                                                    src="./images/quiz/east.jpg"
+                                                    alt="Приклад інтер'єру в східному стилі"
+                                                />
+                                            </div>
+                                            <label for="east">Східний</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <button class="quiz-form__submite-btn" type="submit">
+                                Розрахувати
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- end quiz -->
+            </section>
+            <!-- end price -->
+
+            <!-- services -->
             <section class="services" id="services">
-                <div class="services-wrap">                    
+                <div class="services-wrap">
                     <h2>ОСНОВНІ ПОСЛУГИ</h2>
                     <ul>
                         <li>
@@ -194,8 +473,10 @@
                             <div class="services-list__item-content">
                                 <h3>3D-дизайн</h3>
                                 <p>
-                                Це найскладніший вид дизайну, у якому всі елементи промальовуються з усіх боків обсягом. Завдяки сучасним 
-                                програмам має безмежні можливості і дозволяє побачити ще неіснуюче, оживити будь-які проекти та фантазії. 
+                                    Це найскладніший вид дизайну, у якому всі елементи
+                                    промальовуються з усіх боків обсягом. Завдяки сучасним програмам
+                                    має безмежні можливості і дозволяє побачити ще неіснуюче,
+                                    оживити будь-які проекти та фантазії.
                                 </p>
                             </div>
                         </li>
@@ -208,8 +489,10 @@
                             <div class="services-list__item-content">
                                 <h3>Ремонт</h3>
                                 <p>
-                                    Замислюючись про майбутній ремонт, більшість з нас уявляє собі довгий і важкий процес, але чи знаєте ви, що за 
-                                    заздалегідь спланованої стратегії, можна набагато спростити ремонт та скоротити його терміни.
+                                    Замислюючись про майбутній ремонт, більшість з нас уявляє собі
+                                    довгий і важкий процес, але чи знаєте ви, що за заздалегідь
+                                    спланованої стратегії, можна набагато спростити ремонт та
+                                    скоротити його терміни.
                                 </p>
                             </div>
                         </li>
@@ -223,8 +506,10 @@
                             <div class="services-list__item-content">
                                 <h3>Будівництво</h3>
                                 <p>
-                                    Процес будівництва включає в себе всі організаційні, вишукувальні, проектні, будівельно-монтажні та пусконалагоджувальні
-                                    роботи, пов'язані із створенням, зміною або знесенням об'єкта.
+                                    Процес будівництва включає в себе всі організаційні,
+                                    вишукувальні, проектні, будівельно-монтажні та
+                                    пусконалагоджувальні роботи, пов'язані із створенням, зміною або
+                                    знесенням об'єкта.
                                 </p>
                             </div>
                         </li>
@@ -237,17 +522,19 @@
                             <div class="services-list__item-content">
                                 <h3>Ландшафтний дизайн</h3>
                                 <p>
-                                    Ландшафтний дизайн користується високою популярністю у всьому світі. Це наука про облаштування стильних садово-паркових
-                                    композицій, перетворення прибудинкової території на осередок затишку та витонченого стилю,
+                                    Ландшафтний дизайн користується високою популярністю у всьому
+                                    світі. Це наука про облаштування стильних садово-паркових
+                                    композицій, перетворення прибудинкової території на осередок
+                                    затишку та витонченого стилю,
                                 </p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
-        <!-- end services -->
+            <!-- end services -->
 
-        <!-- projects -->
+            <!-- projects -->
             <section class="projects" id="projects">
                 <a name="projects"></a>
                 <h2>НАШІ ПРОЕКТИ</h2>
@@ -315,9 +602,9 @@
                 </ul>
                 <button class="projects-button">Ще проекти</button>
             </section>
-        <!-- end projects -->
+            <!-- end projects -->
 
-        <!-- stages -->
+            <!-- stages -->
             <section class="stages container">
                 <h2>6 ЕТАПІВ ВІД ЗАЯВКИ ДО ЗДАВАННЯ ГОТОВОГО ОБ'ЄКТУ</h2>
                 <ul>
@@ -327,13 +614,14 @@
                             <svg class="stages-icon stages-icon__envelope">
                                 <use href="./images/stages/stages_sprite.svg#vector_1"></use>
                             </svg>
-                           
+
                             <h4 class="stages-list__item-title">
                                 <span class="title-accent">01</span>
                                 <span class="title-accent__title">Заявка</span>
                             </h4>
                             <p>
-                                Залишайте заявку на сайті та отримайте 2 варіанти планування квартири БЕЗКОШТОВНО
+                                Залишайте заявку на сайті та отримайте 2 варіанти планування
+                                квартири БЕЗКОШТОВНО
                             </p>
                             <a href="" class="stages-list__item-link">
                                 <div class="link-icon"></div>
@@ -347,13 +635,14 @@
                             <svg class="stages-icon stages-icon__rulle">
                                 <use href="./images/stages/stages_sprite.svg#vector_2"></use>
                             </svg>
-                           
+
                             <h4 class="stages-list__item-title">
                                 <span class="title-accent">02</span>
                                 <span class="title-accent__title">Дизайн</span>
                             </h4>
                             <p>
-                                Залишайте заявку на сайті та отримайте 2 варіанти планування квартири БЕЗКОШТОВНО
+                                Залишайте заявку на сайті та отримайте 2 варіанти планування
+                                квартири БЕЗКОШТОВНО
                             </p>
                             <a href="" class="stages-list__item-link">
                                 <div class="link-icon"></div>
@@ -367,13 +656,14 @@
                             <svg class="stages-icon stages-icon__calculate">
                                 <use href="./images/stages/stages_sprite.svg#vector_3"></use>
                             </svg>
-                          
+
                             <h4 class="stages-list__item-title">
                                 <span class="title-accent">03</span>
                                 <span class="title-accent__title">Розрахунок</span>
                             </h4>
                             <p>
-                                Залишайте заявку на сайті та отримайте 2 варіанти планування квартири БЕЗКОШТОВНО
+                                Залишайте заявку на сайті та отримайте 2 варіанти планування
+                                квартири БЕЗКОШТОВНО
                             </p>
                             <a href="" class="stages-list__item-link">
                                 <div class="link-icon"></div>
@@ -387,13 +677,14 @@
                             <svg class="stages-icon stages-icon__list">
                                 <use href="./images/stages/stages_sprite.svg#vector_4"></use>
                             </svg>
-                           
+
                             <h4 class="stages-list__item-title">
                                 <span class="title-accent">04</span>
                                 <span class="title-accent__title">Договір</span>
                             </h4>
                             <p>
-                                Залишайте заявку на сайті та отримайте 2 варіанти планування квартири БЕЗКОШТОВНО
+                                Залишайте заявку на сайті та отримайте 2 варіанти планування
+                                квартири БЕЗКОШТОВНО
                             </p>
                             <a href="" class="stages-list__item-link">
                                 <div class="link-icon"></div>
@@ -407,13 +698,14 @@
                             <svg class="stages-icon stages-icon__brush">
                                 <use href="./images/stages/stages_sprite.svg#vector_5"></use>
                             </svg>
-                            
+
                             <h4 class="stages-list__item-title">
                                 <span class="title-accent">05</span>
                                 <span class="title-accent__title">Ремонт</span>
                             </h4>
                             <p>
-                                Залишайте заявку на сайті та отримайте 2 варіанти планування квартири БЕЗКОШТОВНО
+                                Залишайте заявку на сайті та отримайте 2 варіанти планування
+                                квартири БЕЗКОШТОВНО
                             </p>
                             <a href="" class="stages-list__item-link">
                                 <div class="link-icon"></div>
@@ -427,13 +719,14 @@
                             <svg class="stages-icon stages-icon__home">
                                 <use href="./images/stages/stages_sprite.svg#vector_6"></use>
                             </svg>
-                           
+
                             <h4 class="stages-list__item-title">
                                 <span class="title-accent">06</span>
                                 <span class="title-accent__title">Здача об'єкту</span>
                             </h4>
                             <p>
-                                Залишайте заявку на сайті та отримайте 2 варіанти планування квартири БЕЗКОШТОВНО
+                                Залишайте заявку на сайті та отримайте 2 варіанти планування
+                                квартири БЕЗКОШТОВНО
                             </p>
                             <a href="" class="stages-list__item-link">
                                 <div class="link-icon"></div>
@@ -444,9 +737,9 @@
                 </ul>
                 <button class="stages-button">Почати</button>
             </section>
-        <!-- end stages -->
+            <!-- end stages -->
 
-        <!-- about -->
+            <!-- about -->
             <section class="about">
                 <!-- <div> -->
                 <h3>МИ ТАМ, ДЕ:</h3>
@@ -463,9 +756,9 @@
                 </ul>
                 <!-- </div> -->
             </section>
-        <!-- end about -->
+            <!-- end about -->
 
-        <!-- insta -->
+            <!-- insta -->
             <section class="insta">
                 <h3>
                     <svg
@@ -512,8 +805,7 @@
                     </li>
                 </ul>
             </section>
-        <!-- end insta -->
-
+            <!-- end insta -->
         </main>
         <!-- end main -->
 
@@ -527,14 +819,14 @@
                     <ul>
                         <li>
                             <a href="">
-                                <svg class="footer-icon" style="fill:#000" >
+                                <svg class="footer-icon" style="fill: #000">
                                     <use href="./images/sprite.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <svg class="footer-icon" style="fill:#000">
+                                <svg class="footer-icon" style="fill: #000">
                                     <use href="./images/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
@@ -718,7 +1010,6 @@
         </div>
         <!-- end modal-menu -->
 
-
         <button class="up-btn">Вгору</button>
     </body>
     <script
@@ -728,4 +1019,10 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="./js/index.js" type="module"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
 </html>

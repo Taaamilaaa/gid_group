@@ -14,8 +14,8 @@ export const refs = {
 
     quiz: document.querySelector(".quiz-container"),
     quizStylesImg: document.querySelectorAll(".quiz-img__container"),
-    quizStylesInputs: document.querySelectorAll(".style"),
-    quizForm: document.querySelector('.quiz-form')
+    
+  
 
 
 };

@@ -19,6 +19,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./CSS/styles.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     </head>
 
     <body id="main">
@@ -159,13 +160,13 @@
                                         <li class="price-bonus__item">
                                             <div class="price-bonus__text-container"></div>
                                             <p class="price-bonus__text">
-                                                чек листы на 5 ошибок в строительстве
+                                                чек листи на 5 помилок у будівництві
                                             </p>
                                         </li>
                                         <li class="price-bonus__item">
                                             <div class="price-bonus__text-container"></div>
                                             <p class="price-bonus__text">
-                                                5 трендов 2021 года на дизайн интерьеров
+                                                5 трендів 2021 року на дизайн інтер'єрів
                                             </p>
                                         </li>
                                     </ul>
@@ -185,7 +186,7 @@
                     </button>
 
                     <div id="quizBegin" class="quiz-content">
-                        <form class="quiz-form" action="">
+                        <form name="quiz" class="quiz-form" action="">
                             <div class="quiz-content__list">
                                 <div>
                                     <ul class="quiz-content-text__list">
@@ -229,10 +230,10 @@
                                                         class="custom-radio"
                                                         type="radio"
                                                         name="service"
-                                                        value="small"
-                                                        id="large"
+                                                        value="landscaping"
+                                                        id="landscaping"
                                                     />
-                                                    <label for="large"
+                                                    <label for="landscaping"
                                                         >Ландшафтний дизайн та проектування</label
                                                     >
                                                 </li>
@@ -325,7 +326,7 @@
                                                         class="custom-radio"
                                                         type="radio"
                                                         name="square"
-                                                        value="small"
+                                                        value="medium"
                                                         id="medium"
                                                     />
                                                     <label for="medium">від 80 м2 до 120 м2</label>
@@ -335,15 +336,15 @@
                                                         class="custom-radio"
                                                         type="radio"
                                                         name="square"
-                                                        value="small"
+                                                        value="large"
                                                         id="large"
                                                     />
                                                     <label for="large">від 120 м2</label>
                                                 </li>
                                             </ul>
                                         </li>
-                                    </div>
-                                </li>
+                                    </ul>
+                                </div>
 
                                 <div class="quiz-content__list-item">
                                     <h3>Питання 4:</h3>
@@ -353,7 +354,7 @@
                                             <input
                                                 class="custom-radio"
                                                 type="radio"
-                                                name="style"
+                                                name="interiorStyle"
                                                 value="scandinavian"
                                                 id="scandinavian"
                                             />
@@ -369,7 +370,7 @@
                                             <input
                                                 class="custom-radio"
                                                 type="radio"
-                                                name="style"
+                                                name="interiorStyle"
                                                 value="func"
                                                 id="func"
                                             />
@@ -385,7 +386,7 @@
                                             <input
                                                 class="custom-radio"
                                                 type="radio"
-                                                name="style"
+                                                name="interiorStyle"
                                                 value="loft"
                                                 id="loft"
                                             />
@@ -401,7 +402,7 @@
                                             <input
                                                 class="custom-radio"
                                                 type="radio"
-                                                name="style"
+                                                name="interiorStyle"
                                                 value="minimalism"
                                                 id="minimalism"
                                                 checked
@@ -418,7 +419,7 @@
                                             <input
                                                 class="custom-radio"
                                                 type="radio"
-                                                name="style"
+                                                name="interiorStyle"
                                                 value="high-tech"
                                                 id="high-tech"
                                             />
@@ -432,9 +433,9 @@
                                         </li>
                                         <li class="question-4__list-item">
                                             <input
-                                                class="custom-radio style"
+                                                class="custom-radio"
                                                 type="radio"
-                                                name="style"
+                                                name="interiorStyle"
                                                 value="east"
                                                 id="east"
                                             />
@@ -447,7 +448,64 @@
                                             <label for="east">Східний</label>
                                         </li>
                                     </ul>
-                                </li>
+                                </div>
+                                <div name="userData" class="userData-form">
+                                    <h3>Яким чином можна з Вами зв'язатися?</h3>
+                                    <ul class="userData-method__list">
+                                        <li>
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="contact"
+                                                value="tel"
+                                                id="tel"
+                                            />
+                                            <label for="tel">Зателефонуйте мені</label>
+                                        </li>
+                                        <li>
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="contact"
+                                                value="email"
+                                                id="email"
+                                            />
+                                            <label for="email"
+                                                >Напишіть мені на електронну пошту</label
+                                            >
+                                        </li>
+                                        <li>
+                                            <input
+                                                class="custom-radio"
+                                                type="radio"
+                                                name="contact"
+                                                value="all"
+                                                id="all"
+                                                checked
+                                            />
+                                            <label for="all">Буду чекати дзвінок та лист</label>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="userData-list">
+                                        <h3>Вкажіть ващі дані для зі'язку:</h3>
+                                        <li>
+                                            <!-- <label for="userName">Ім'я:</label> -->
+                                            <input type="text" name="userName" id="userName" placeholder="Ім'я" />
+
+                                        </li>
+                                        <li>
+                                            <!-- <label for="userName">Телефон:</label> -->
+
+                                            <input type="text" name="userPhone" id="userPhone" placeholder="+38(___) ___-____" />
+                                        </li>
+                                        <li>
+                                            <!-- <label for="userName">Адреса електронної пошти:</label> -->
+
+                                            <input type="email" name="userEmail" id="userEmail" placeholder="Пошта"/>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <button class="quiz-form__submite-btn" type="submit">
                                 Розрахувати
@@ -1025,4 +1083,7 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
 </html>

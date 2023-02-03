@@ -15,7 +15,6 @@ function onModalOpenBtnClick(e) {
 function onModalCloseBtnClick(e) {
     if (e.currentTarget.className === "modalCloseBtn" || e.target.nodeName === 'A') {
         refs.modal.classList.remove("modalOpen")
-        console.log('close');
+        return;
     }
 }
-export {onModalOpenBtnClick, onModalCloseBtnClick}

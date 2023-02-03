@@ -57,17 +57,18 @@ a {
 html {   
     box-sizing: border-box;
     font-size: 14px;
+    
 }
 html{
     scroll-behavior: smooth;
 }
 
-body {   
-    
+body { 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5rem;
     color: var(--hero-text-color);
+    background: #EEEEEE;
 }

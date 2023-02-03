@@ -16,5 +16,3 @@ function onHeroFormCloseBtnClick(e) {
        refs.heroFormContainer.classList.remove("hero-form__containerOpen")
    }
 }
-
-export {onPhoneBtnClick, onHeroFormCloseBtnClick}

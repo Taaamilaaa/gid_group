@@ -1,7 +1,7 @@
-    const styles = getComputedStyle(document.documentElement);
-    const borderColor = String(styles.getPropertyValue('--border-color')).trim();
- const accentColor = String(styles.getPropertyValue('--accent-color')).trim();
-    const benefitsTextColor = String(styles.getPropertyValue('--benefits-text-color')).trim();
+const styles = getComputedStyle(document.documentElement);
+const borderColor = String(styles.getPropertyValue('--border-color')).trim();
+const accentColor = String(styles.getPropertyValue('--accent-color')).trim();
+const benefitsTextColor = String(styles.getPropertyValue('--benefits-text-color')).trim();
 
 const toastQuizSuccessPhone = Toastify({
     text: 'Ваші дані надіслані в обробку. Ми вам скоро зателефонуємо!',
@@ -55,7 +55,6 @@ const toastQuizSuccessAll = Toastify({
     },
 });
 
-
 const toastQuizeErrorTel = Toastify({
     text: 'Залишіть номер телефону, щоб ми могли Вам зателефонувати',
     duration: 3000,
@@ -67,7 +66,7 @@ const toastQuizeErrorTel = Toastify({
     style: {
         background: accentColor,
         color: benefitsTextColor,
-        border: "5px dotted black",
+        border: '5px dotted black',
         borderRadius: '15px',
         padding: '50px',
     },
@@ -83,7 +82,7 @@ const toastQuizeErrorEmail = Toastify({
     style: {
         background: accentColor,
         color: benefitsTextColor,
-        border: "5px dotted black",
+        border: '5px dotted black',
         borderRadius: '15px',
         padding: '50px',
     },
@@ -99,11 +98,17 @@ const toastQuizeErrorAll = Toastify({
     style: {
         background: accentColor,
         color: benefitsTextColor,
-        border: "5px dotted black",
+        border: '5px dotted black',
         borderRadius: '15px',
         padding: '50px',
     },
 });
 
-
-export { toastQuizSuccessPhone, toastQuizSuccessEmail, toastQuizSuccessAll, toastQuizeErrorTel, toastQuizeErrorEmail, toastQuizeErrorAll};
+export {
+    toastQuizSuccessPhone,
+    toastQuizSuccessEmail,
+    toastQuizSuccessAll,
+    toastQuizeErrorTel,
+    toastQuizeErrorEmail,
+    toastQuizeErrorAll,
+};

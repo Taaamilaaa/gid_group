@@ -1,18 +1,41 @@
-"use strict"
+'use strict';
 
-import { refs } from "./refs.js"
+import { refs } from './refs.js';
+import { toastCallFormNameError, toastCallFormNameSuccess } from './toast.js';
 
-refs.phoneBtn.addEventListener("click", onPhoneBtnClick);
-refs.heroFormCloseBtn.addEventListener("click", onHeroFormCloseBtnClick)
+const callForm = document.forms.callForm;
 
-function onPhoneBtnClick(e) {
-    if (e.currentTarget.className === "phoneBtn") {
-       refs.heroFormContainer.classList.add("hero-form__containerOpen")
-   }
+refs.phoneBtn.addEventListener('click', callFormOpen);
+refs.callFormCloseBtn.addEventListener('click', callFormClose);
+callForm.addEventListener('submit', callFormSubmit);
+
+function callFormOpen(e) {
+    refs.callFormContainer.classList.add('call-form__containerOpen');
+    refs.phoneBtn.removeEventListener('click', callFormOpen);
 }
 
-function onHeroFormCloseBtnClick(e) {
-   if (e.currentTarget.className === "hero-form__btn") {
-       refs.heroFormContainer.classList.remove("hero-form__containerOpen")
-   }
+function callFormClose(e) {
+    refs.callFormContainer.classList.remove('call-form__containerOpen');
+    refs.phoneBtn.addEventListener('click', callFormOpen);
+}
+
+function callFormSubmit(e) {
+    e.preventDefault();
+
+    const userName = e.currentTarget.userName.value.trim();
+    const userTel = e.currentTarget.userTel.value.trim();
+
+    if (userName.length < 3 || userName.length === 0) {
+        toastCallFormNameError.showToast();
+    } else if (userTel.length < 6 || userTel.length === 0) {
+        toastCallFormNameError.showToast();
+    } else if (userName.length > 2 && userTel.length > 5) {
+        const user = {
+            name: userName,
+            tel: userTel,
+        };
+        toastCallFormNameSuccess.showToast();
+        callFormClose();
+        return user;
+    }
 }

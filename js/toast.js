@@ -1,7 +1,25 @@
 const styles = getComputedStyle(document.documentElement);
 const borderColor = String(styles.getPropertyValue('--border-color')).trim();
-const accentColor = String(styles.getPropertyValue('--accent-color')).trim();
+const accentColor = String(styles.getPropertyValue('--toast-color')).trim();
 const benefitsTextColor = String(styles.getPropertyValue('--benefits-text-color')).trim();
+
+const errStyle = {
+    background: accentColor,
+    color: benefitsTextColor,
+    border: '5px dotted black',
+    borderRadius: '15px',
+    padding: '50px',
+    fontSize: '1.5rem',
+
+};
+const successStyle = {
+    background: accentColor,
+        color: benefitsTextColor,
+        borderRadius: '15px',
+        padding: '50px',
+        fontSize: '1.5rem',
+        fontWeight: '500',
+}
 
 const toastQuizSuccessPhone = Toastify({
     text: 'Ваші дані надіслані в обробку. Ми вам скоро зателефонуємо!',
@@ -11,14 +29,7 @@ const toastQuizSuccessPhone = Toastify({
     gravity: 'top',
     position: 'right',
     stopOnFocus: true,
-    style: {
-        background: accentColor,
-        color: benefitsTextColor,
-        borderRadius: '15px',
-        padding: '50px',
-        fontSize: '1rem',
-        fontWeight: '500',
-    },
+    style: successStyle
 });
 const toastQuizSuccessEmail = Toastify({
     text: 'Ваші дані надіслані в обробку. Не забудьте перевірити Вашу пошту!',
@@ -28,14 +39,7 @@ const toastQuizSuccessEmail = Toastify({
     gravity: 'top',
     position: 'right',
     stopOnFocus: true,
-    style: {
-        background: accentColor,
-        color: benefitsTextColor,
-        borderRadius: '15px',
-        padding: '50px',
-        fontSize: '1rem',
-        fontWeight: '500',
-    },
+    style: successStyle,
 });
 const toastQuizSuccessAll = Toastify({
     text: 'Ваші дані надіслані в обробку.Чекайте нашого дзвінка та не забудьте перевірити Вашу пошту!',
@@ -45,14 +49,7 @@ const toastQuizSuccessAll = Toastify({
     gravity: 'top',
     position: 'right',
     stopOnFocus: true,
-    style: {
-        background: accentColor,
-        color: benefitsTextColor,
-        borderRadius: '15px',
-        padding: '50px',
-        fontSize: '1rem',
-        fontWeight: '500',
-    },
+    style: successStyle,
 });
 
 const toastQuizeErrorTel = Toastify({
@@ -63,13 +60,7 @@ const toastQuizeErrorTel = Toastify({
     gravity: 'top',
     position: 'right',
     stopOnFocus: true,
-    style: {
-        background: accentColor,
-        color: benefitsTextColor,
-        border: '5px dotted black',
-        borderRadius: '15px',
-        padding: '50px',
-    },
+    style: errStyle,
 });
 const toastQuizeErrorEmail = Toastify({
     text: 'Залишіть адресу пошти, щоб ми могли Вам надіслати листа',
@@ -79,13 +70,7 @@ const toastQuizeErrorEmail = Toastify({
     gravity: 'top',
     position: 'right',
     stopOnFocus: true,
-    style: {
-        background: accentColor,
-        color: benefitsTextColor,
-        border: '5px dotted black',
-        borderRadius: '15px',
-        padding: '50px',
-    },
+    style: errStyle,
 });
 const toastQuizeErrorAll = Toastify({
     text: 'Залишіть Ващі контакти!',
@@ -95,13 +80,29 @@ const toastQuizeErrorAll = Toastify({
     gravity: 'top',
     position: 'right',
     stopOnFocus: true,
-    style: {
-        background: accentColor,
-        color: benefitsTextColor,
-        border: '5px dotted black',
-        borderRadius: '15px',
-        padding: '50px',
-    },
+    style: errStyle,
+});
+
+const toastCallFormNameSuccess = Toastify({
+    text: 'Скоро зв\'яжемося з Вами',
+    duration: 3000,
+    newWindow: true,
+    close: false,
+    gravity: 'top',
+    position: 'right',
+    stopOnFocus: true,
+    style: successStyle,
+});
+
+const toastCallFormNameError = Toastify({
+    text: 'Заповніть поля форми зворотнього дзвінка',
+    duration: 3000,
+    newWindow: true,
+    close: false,
+    gravity: 'top',
+    position: 'right',
+    stopOnFocus: true,
+    style: errStyle,
 });
 
 export {
@@ -111,4 +112,6 @@ export {
     toastQuizeErrorTel,
     toastQuizeErrorEmail,
     toastQuizeErrorAll,
+    toastCallFormNameError,
+    toastCallFormNameSuccess
 };

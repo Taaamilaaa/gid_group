@@ -11,6 +11,7 @@ import {
 const form = document.forms.quiz;
 
 refs.quizOpenBtn.forEach(el => el.addEventListener('click', onClickQuizToggle));
+refs.beginBtn.addEventListener('click', onClickQuizToggle);
 refs.quizCloseBtn.addEventListener('click', onClickQuizToggle);
 refs.quizStylesImg.forEach(el => el.addEventListener('click', imgChecked));
 
@@ -39,15 +40,16 @@ const openForm = () => {
 // checking by img click
 
 function imgChecked(e) {
-    const allFormVlues = form.interiorStyle;
+    const allFormValues = form.interiorStyle;
 
-    allFormVlues.forEach(el => {
+    allFormValues.forEach(el => {
         if (el.id === e.currentTarget.id) {
             el.checked = true;
         }
     });
     return;
 }
+
 
 function onFormSubmite(e) {
     e.preventDefault();

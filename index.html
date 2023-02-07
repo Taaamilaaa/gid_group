@@ -19,7 +19,11 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./CSS/styles.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
     </head>
 
     <body id="main">
@@ -46,9 +50,11 @@
             </nav>
 
             <div class="logo-container">
-                <img src="./images/logo.svg" alt="logo" />
+                <a href="/index.html">
+                    <img src="./images/logo.svg" alt="logo" />
+                </a>
             </div>
-        </header>      
+        </header>
 
         <!--end header -->
 
@@ -56,20 +62,26 @@
         <main>
             <!-- hero -->
             <section class="hero">
-                <div class="hero-form__container">
-                    <div class="hero-form">
-                        <button class="hero-form__btn">
+                <div class="call-form__container">
+                    <form name="callForm" class="call-form">
+                        <button type="button" class="call-form__btn">
                             <svg width="37" height="37" class="form-btn__icon">
                                 <use href="./images/sprite.svg#cros-phone"></use>
                             </svg>
                         </button>
                         <h4>Зворотній дзвінок</h4>
                         <div>
-                            <input type="text" placeholder="Ваше ім'я" pattern="[a-z]{1,15}" />
-                            <input type="number" placeholder="Номер телефону" pattern="" />
+                            <input type="text" name="userName" placeholder="Ваше ім'я" />
+                            <input
+                                type="tel"
+                                name="userTel"
+                                id="phone"
+                                placeholder="+38(___) ___-____"
+                                required
+                            />
                             <button class="form-btn" type="submit">Зателефонуйте мені</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <h1 class="hero-title">Найкраще для кращих</h1>
@@ -490,26 +502,33 @@
                                     <ul class="userData-list">
                                         <h3>Вкажіть ващі дані для зі'язку:</h3>
                                         <li>
-                                            <!-- <label for="userName">Ім'я:</label> -->
-                                            <input type="text" name="userName" id="userName" placeholder="Ім'я" />
-
+                                            <input
+                                                type="text"
+                                                name="userName"
+                                                id="userName"
+                                                placeholder="Ім'я"
+                                            />
                                         </li>
                                         <li>
-                                            <!-- <label for="userName">Телефон:</label> -->
-
-                                            <input type="text" name="userPhone" id="userPhone" placeholder="+38(___) ___-____" />
+                                            <input
+                                                type="tel"
+                                                name="userPhone"
+                                                id="userPhone"
+                                                placeholder="+38(___) ___-____"
+                                            />
                                         </li>
                                         <li>
-                                            <!-- <label for="userName">Адреса електронної пошти:</label> -->
-
-                                            <input type="email" name="userEmail" id="userEmail" placeholder="Пошта"/>
+                                            <input
+                                                type="email"
+                                                name="userEmail"
+                                                id="userEmail"
+                                                placeholder="Пошта"
+                                            />
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <button class="quiz-form__submite-btn" type="submit">
-                                Розрахувати
-                            </button>
+                            <button class="quiz-form__submit-btn" type="submit">Розрахувати</button>
                         </form>
                     </div>
                 </div>
@@ -793,6 +812,7 @@
                         </div>
                     </li>
                 </ul>
+
                 <button class="stages-button">Почати</button>
             </section>
             <!-- end stages -->
@@ -871,47 +891,73 @@
         <footer id="contacts">
             <div class="footer-top__wrapper">
                 <div class="footer-logo__container">
-                    <img src="./images/logo.svg" alt="" />
+                    <a href="/">
+                        <img src="./images/logo.svg" alt="logo" />
+                    </a>
                 </div>
                 <div class="footer-social__list-wrapper">
                     <ul>
                         <li>
-                            <a href="">
+                            <a
+                                class="footer-social__list-link"
+                                href="https://web.telegram.org/k/"
+                                target="_blank"
+                            >
                                 <svg class="footer-icon" style="fill: #000">
                                     <use href="./images/sprite.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                class="footer-social__list-link"
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                            >
                                 <svg class="footer-icon" style="fill: #000">
                                     <use href="./images/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                class="footer-social__list-link"
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                            >
                                 <svg class="footer-icon">
                                     <use href="./images/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                class="footer-social__list-link"
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                            >
                                 <svg class="footer-icon">
                                     <use href="./images/sprite.svg#icon-youtube"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                class="footer-social__list-link"
+                                href="https://www.tiktok.com/"
+                                target="_blank"
+                            >
                                 <svg class="footer-icon">
                                     <use href="./images/sprite.svg#icon-tiktok"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a
+                                class="footer-social__list-link"
+                                href="https://www.viber.com/"
+                                target="_blank"
+                            >
                                 <svg class="footer-icon">
                                     <use href="./images/sprite.svg#icon-viber"></use>
                                 </svg>
@@ -985,6 +1031,7 @@
         <!-- end footer -->
 
         <!-- modal-menu -->
+
         <div class="modal-container">
             <div class="modal">
                 <button class="modalCloseBtn">
@@ -994,7 +1041,9 @@
                 </button>
 
                 <div class="modal-logo">
-                    <img src="./images/logo.svg" alt="logo" />
+                    <a href="/">
+                        <img src="./images/logo.svg" alt="logo" />
+                    </a>
                 </div>
                 <nav>
                     <ul class="modal-nav__list">
@@ -1008,12 +1057,8 @@
                             <a class="modal-nav__link" href="#projects">Проекти</a>
                         </li>
                         <li>
-                            <a class="modal-nav__link"href="#services">Ремонт</a>
+                            <a class="modal-nav__link" href="#services">Ремонт</a>
                         </li>
-                        <!-- <li>
-                            <a class="modal-nav__link" href="./team.html">Про компанію</a>
-                        </li> -->
-
                         <li>
                             <a class="modal-nav__link" id="contacts" href="#contacts">Контакти</a>
                         </li>
@@ -1022,42 +1067,42 @@
                 <div class="modal-social__list-container">
                     <ul class="modal-social__list">
                         <li>
-                            <a href="">
+                            <a href="https://web.telegram.org/k/" target="_blank">
                                 <svg class="modal-icon">
                                     <use href="./images/modal_sprite.svg#icon-telegram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/" target="_blank">
                                 <svg class="modal-icon">
                                     <use href="./images/modal_sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.facebook.com/" target="_blank">
                                 <svg class="modal-icon">
                                     <use href="./images/modal_sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.youtube.com/" target="_blank">
                                 <svg class="modal-icon">
                                     <use href="./images/modal_sprite.svg#icon-youtube"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.tiktok.com/" target="_blank">
                                 <svg class="modal-icon">
                                     <use href="./images/modal_sprite.svg#icon-tiktok"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.viber.com/" target="_blank">
                                 <svg class="modal-icon">
                                     <use href="./images/modal_sprite.svg#icon-viber"></use>
                                 </svg>
@@ -1078,6 +1123,7 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="./js/index.js" type="module"></script>
+    <script src="./js/jQuary_3.6.1.js" type="text/javascript"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
         integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
@@ -1085,6 +1131,15 @@
         referrerpolicy="no-referrer"
     ></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-
+    <script src="./js/maskinput.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('#phone').mask('+38(999) 999-9999');
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('#userPhone').mask('+38(999) 999-9999');
+        });
+    </script>
 </html>

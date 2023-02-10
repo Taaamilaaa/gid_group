@@ -798,7 +798,7 @@ svg.stages-icon.stages-icon__home {
 
 .about {
     width: 100%;
-    background: url(../images/img/bg_about-mobile.svg),
+    background: url(../images/img/bg_about-mobile.jpg),
         linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-repeat: no-repeat;
     background-size: cover;
@@ -1419,7 +1419,7 @@ svg.modal-icon {
     .projects-list::after {
         display: block;
         content: '';
-        width: 587px;
+        width: 580px;
         height: 1580px;
         background: #f5f5f5;
         position: absolute;
@@ -1569,7 +1569,7 @@ svg.modal-icon {
 
     .about {
         padding: 79px 141px 145px;
-        background: url(../images/img/bg_about-tablet.svg);
+        background: url(../images/img/bg_about-tablet.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1816,7 +1816,7 @@ svg.modal-icon {
 
 @media only screen and (min-width: 1919px) {
     .bg-container {
-        height: 1080px;
+        height: 1085px;
     }
 
     *,
